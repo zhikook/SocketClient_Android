@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/body"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/Black"
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:id="@+id/net_area"
+        android:layout_width="wrap_content"
+        android:layout_height="30dip"
+        android:layout_gravity="center_horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Server IP: "
+            android:textColor="@color/Green"/>
+        <EditText
+            android:id="@+id/ip"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"
+            android:text="192.168.1.100"
+            android:background="@color/WhiteSmoke"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" PORT: "
+            android:textColor="@color/Green"
+            />
+        <EditText
+            android:id="@+id/port"
+            android:layout_width="60dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="8888"
+            android:background="@color/WhiteSmoke"
+           />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/net_area"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="fill_horizontal"
+        android:layout_gravity="center_horizontal">
+        <Button
+            android:id="@+id/btc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CONNECT"
+
+        />
+        <Button
+            android:id="@+id/disbt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="DISCONNECT"
+            />
+        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/msg_area"
+        android:layout_width="fill_parent"
+        android:layout_height="130dp"
+        android:background="#60188a"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="5dp">
+        <EditText
+            android:id="@+id/msg_et"
+            android:layout_width="300dp"
+            android:layout_height="fill_parent"
+            android:background="#60338a"
+            android:text=" Message "
+            android:textSize="18sp" />
+        <Button
+            android:id="@+id/bts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@color/Gray"
+            android:text="SEND"
+            android:textColor="@color/Indigo" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/msg_area2"
+        android:layout_width="fill_parent"
+        android:layout_height="130dp"
+        android:background="#60188a"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="5dp">
+        <TextView
+            android:id="@+id/msg_result"
+            android:layout_width="300dp"
+            android:layout_height="fill_parent"
+            android:background="#60338a"
+            android:text=" Message "
+            android:textSize="18sp" />
+        <Button
+            android:id="@+id/btr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@color/Gray"
+            android:text="Rece"
+            android:textColor="@color/Indigo" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:text="Status: "
+        android:id="@+id/msg_status"
+        android:layout_marginTop="10dp" />
+
+
+</LinearLayout>
