@@ -4,6 +4,9 @@ version 0.32
 
 # Multi-Thread with socket communication in Android
 
+实现在Android 环境下的Socket通信，input,output读写线程分离，构建Client线程管理，
+透过Handler与UI线程通信，并实时更新UI界面 。
+
 ***********************************************************************************************
 ### Author
 * Zhiyong Liu ,At Shanghai,China 
